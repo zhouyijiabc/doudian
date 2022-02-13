@@ -1,0 +1,423 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1059</width>
+    <height>821</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>抖店自动邀约</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QHBoxLayout" name="horizontalLayout">
+    <item>
+     <widget class="QTabWidget" name="tabWidget">
+      <property name="currentIndex">
+       <number>0</number>
+      </property>
+      <widget class="QWidget" name="tab">
+       <attribute name="title">
+        <string>自动邀约</string>
+       </attribute>
+       <layout class="QGridLayout" name="gridLayout_3" rowstretch="0,0,0,0,0,0">
+        <item row="5" column="0" colspan="3">
+         <widget class="QTextBrowser" name="textBrowser"/>
+        </item>
+        <item row="4" column="0" colspan="3">
+         <widget class="QGroupBox" name="groupBox_5">
+          <property name="title">
+           <string>生成文件</string>
+          </property>
+          <layout class="QGridLayout" name="gridLayout_2">
+           <item row="0" column="1">
+            <widget class="QCheckBox" name="name_checkBox">
+             <property name="text">
+              <string>名字</string>
+             </property>
+             <property name="checked">
+              <bool>true</bool>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="6">
+            <widget class="QCheckBox" name="fans_num_checkBox">
+             <property name="text">
+              <string>粉丝数</string>
+             </property>
+             <property name="checked">
+              <bool>true</bool>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="7">
+            <widget class="QCheckBox" name="sell_goods_num_checkBox">
+             <property name="text">
+              <string>直播带货场次</string>
+             </property>
+             <property name="checked">
+              <bool>true</bool>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="0">
+            <widget class="QCheckBox" name="date_checkBox">
+             <property name="text">
+              <string>日期</string>
+             </property>
+             <property name="checked">
+              <bool>true</bool>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="5">
+            <widget class="QCheckBox" name="credit_score_checkBox">
+             <property name="text">
+              <string>信用分</string>
+             </property>
+             <property name="checked">
+              <bool>true</bool>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="8">
+            <widget class="QCheckBox" name="sell_goods_day_checkBox">
+             <property name="text">
+              <string>带货直播天数</string>
+             </property>
+             <property name="checked">
+              <bool>true</bool>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="9">
+            <widget class="QCheckBox" name="goods_num_checkBox">
+             <property name="text">
+              <string>推广商品数</string>
+             </property>
+             <property name="checked">
+              <bool>true</bool>
+             </property>
+            </widget>
+           </item>
+           <item row="3" column="1" colspan="2">
+            <widget class="QLineEdit" name="save_name_lineEdit"/>
+           </item>
+           <item row="3" column="0">
+            <widget class="QLabel" name="label_4">
+             <property name="text">
+              <string>文件名：</string>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="4">
+            <widget class="QCheckBox" name="word_of_mouth_checkBox">
+             <property name="text">
+              <string>带货口碑</string>
+             </property>
+             <property name="checked">
+              <bool>true</bool>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="3">
+            <widget class="QCheckBox" name="area_checkBox">
+             <property name="text">
+              <string>地区</string>
+             </property>
+             <property name="checked">
+              <bool>true</bool>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="2">
+            <widget class="QCheckBox" name="average_sales_checkBox">
+             <property name="text">
+              <string>场均销售额</string>
+             </property>
+             <property name="checked">
+              <bool>true</bool>
+             </property>
+            </widget>
+           </item>
+           <item row="1" column="0">
+            <widget class="QCheckBox" name="conversion_num_checkBox">
+             <property name="text">
+              <string>转化指数</string>
+             </property>
+             <property name="checked">
+              <bool>true</bool>
+             </property>
+            </widget>
+           </item>
+           <item row="1" column="1">
+            <widget class="QCheckBox" name="wechatid_checkBox">
+             <property name="text">
+              <string>微信号</string>
+             </property>
+             <property name="checked">
+              <bool>true</bool>
+             </property>
+            </widget>
+           </item>
+           <item row="1" column="8">
+            <widget class="QCheckBox" name="live_room_feature_checkBox">
+             <property name="text">
+              <string>直播间特征</string>
+             </property>
+            </widget>
+           </item>
+           <item row="1" column="7">
+            <widget class="QCheckBox" name="fans_group_feature_checkBox">
+             <property name="text">
+              <string>粉丝团特征</string>
+             </property>
+            </widget>
+           </item>
+           <item row="1" column="6">
+            <widget class="QCheckBox" name="fans_feature_checkBox">
+             <property name="text">
+              <string>粉丝特征</string>
+             </property>
+            </widget>
+           </item>
+           <item row="1" column="5">
+            <widget class="QCheckBox" name="average_live_time_checkBox">
+             <property name="text">
+              <string>平均在线时长</string>
+             </property>
+            </widget>
+           </item>
+           <item row="1" column="4">
+            <widget class="QCheckBox" name="live_num_checkBox">
+             <property name="text">
+              <string>直播观看人数</string>
+             </property>
+            </widget>
+           </item>
+           <item row="1" column="3">
+            <widget class="QCheckBox" name="store_num_checkBox">
+             <property name="text">
+              <string>合作店铺数</string>
+             </property>
+            </widget>
+           </item>
+           <item row="1" column="2">
+            <widget class="QCheckBox" name="phone_num_checkBox">
+             <property name="text">
+              <string>手机号</string>
+             </property>
+             <property name="checked">
+              <bool>true</bool>
+             </property>
+            </widget>
+           </item>
+           <item row="1" column="9">
+            <widget class="QCheckBox" name="douyinid_checkBox">
+             <property name="text">
+              <string>抖音号</string>
+             </property>
+            </widget>
+           </item>
+           <item row="3" column="7">
+            <widget class="QPushButton" name="start_pushButton">
+             <property name="text">
+              <string>开始</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </item>
+        <item row="0" column="1">
+         <widget class="QGroupBox" name="groupBox">
+          <property name="title">
+           <string>达人选择</string>
+          </property>
+          <layout class="QHBoxLayout" name="horizontalLayout_2">
+           <item>
+            <widget class="QRadioButton" name="live_daren_radioButton">
+             <property name="text">
+              <string>直播达人</string>
+             </property>
+             <property name="checked">
+              <bool>true</bool>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QRadioButton" name="video_daren_radioButton">
+             <property name="text">
+              <string>短视频达人</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </item>
+        <item row="2" column="0" colspan="3">
+         <widget class="QGroupBox" name="groupBox_2">
+          <property name="title">
+           <string>销售额</string>
+          </property>
+          <layout class="QGridLayout" name="gridLayout">
+           <item row="0" column="5">
+            <widget class="QCheckBox" name="sales_5w_10w_checkBox">
+             <property name="text">
+              <string>¥5万-10万</string>
+             </property>
+             <property name="checked">
+              <bool>true</bool>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="2">
+            <widget class="QCheckBox" name="sales_1k_5k_checkBox">
+             <property name="text">
+              <string>￥1000-5000</string>
+             </property>
+             <property name="checked">
+              <bool>true</bool>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="4">
+            <widget class="QCheckBox" name="sales_1w_5w_checkBox">
+             <property name="text">
+              <string>¥1万-5万</string>
+             </property>
+             <property name="checked">
+              <bool>true</bool>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="0">
+            <widget class="QCheckBox" name="sales_100_500_checkBox">
+             <property name="text">
+              <string>¥100-500</string>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="3">
+            <widget class="QCheckBox" name="sales_5k_1w_checkBox">
+             <property name="text">
+              <string>¥5000-1万</string>
+             </property>
+             <property name="checked">
+              <bool>true</bool>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="1">
+            <widget class="QCheckBox" name="sales_500_1k_checkBox">
+             <property name="text">
+              <string>¥500-1000</string>
+             </property>
+            </widget>
+           </item>
+           <item row="1" column="0">
+            <widget class="QCheckBox" name="sales_10w_50w_checkBox">
+             <property name="text">
+              <string>10万-50万</string>
+             </property>
+            </widget>
+           </item>
+           <item row="1" column="1">
+            <widget class="QCheckBox" name="sales_100w_500w_checkBox">
+             <property name="text">
+              <string>¥100万-500万</string>
+             </property>
+            </widget>
+           </item>
+           <item row="1" column="2">
+            <widget class="QCheckBox" name="sales_is_none_checkBox">
+             <property name="text">
+              <string>达人未授权</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </item>
+        <item row="0" column="2">
+         <widget class="QGroupBox" name="groupBox_3">
+          <property name="title">
+           <string>类目选择</string>
+          </property>
+          <layout class="QHBoxLayout" name="horizontalLayout_3" stretch="0,1,0,1">
+           <item>
+            <widget class="QLabel" name="label_2">
+             <property name="text">
+              <string>大类目：</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QComboBox" name="big_class_comboBox"/>
+           </item>
+           <item>
+            <widget class="QLabel" name="label_3">
+             <property name="text">
+              <string>小类目：</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QComboBox" name="small_class_comboBox"/>
+           </item>
+          </layout>
+         </widget>
+        </item>
+        <item row="0" column="0">
+         <widget class="QGroupBox" name="groupBox_4">
+          <property name="title">
+           <string>操作选择</string>
+          </property>
+          <layout class="QHBoxLayout" name="horizontalLayout_4">
+           <item>
+            <widget class="QRadioButton" name="invite_radioButton">
+             <property name="text">
+              <string>自动邀约</string>
+             </property>
+             <property name="checked">
+              <bool>true</bool>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QRadioButton" name="catch_wechat_id_radioButton">
+             <property name="text">
+              <string>抓取联系方式</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QRadioButton" name="invite_and_catch_radioButton">
+             <property name="text">
+              <string>自动邀约并抓取联系方式</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="tab_2">
+       <attribute name="title">
+        <string>自动报表</string>
+       </attribute>
+      </widget>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
