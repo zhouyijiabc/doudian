@@ -4,6 +4,7 @@ from qt_material import apply_stylesheet
 import sys
 import os
 import time
+import combox
 
 CLASS_VALUE = {'玩具乐器': ['玩具', '乐器', '其他'],
                '服饰内衣': ['配饰', '女装', '男装', '内衣'],
@@ -20,6 +21,9 @@ CLASS_VALUE = {'玩具乐器': ['玩具', '乐器', '其他'],
                '钟表配饰': ['眼镜', '饰品', '钟表'],
                '珠宝文玩': ['古董收藏', '珠宝黄金']}
 
+items = ['FH1', 'FH2', 'FH3', 'FH5', 'FH9', 'FH10', 'HT1', 'HT2', 'HT3', 'HT5', 'HT6', 'HT7', 'LH1', 'LH2', 'LH3', 'ZS1']
+
+
 
 class Run:
     def __init__(self):
@@ -27,6 +31,8 @@ class Run:
         self.main = QMainWindow()
         self.window = Ui_MainWindow()
         self.window.setupUi(self.main)
+
+
         # 类目设置
         self.window.big_class_comboBox.addItems(CLASS_VALUE.keys())  # 设置大类目数据
         self.window.big_class_comboBox.setCurrentIndex(7)  # 设置大类目默认数据
